@@ -6,6 +6,11 @@ NoCode Customizable Form Editor
 [Demo Form Builder](https://fouita.com/explore/form-builder/forms/0x57341/edit) 
 
 
+### Screenshots
+
+![Form Builder Fouita](https://cdn.fouita.com/0x2713/media/imgs/form-builder-2-1672321442528.png)
+
+![Form builder Fouita](https://cdn.fouita.com/0x2713/media/imgs/form-builder-1-1672321443498.png)
 
 ### Install
 
