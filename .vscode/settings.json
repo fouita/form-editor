@@ -1,0 +1,54 @@
+{
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "svelte.plugin.css.documentSymbols.enable": false,
+    "[svelte]": {
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.detectIndentation": true,
+      "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+  
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.organizeImports": false
+    },
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#ffcb49d5",
+      "activityBar.foreground": "#000"
+    },
+  
+    "eslint.packageManager": "npm",
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": ["javascript", "typescript", "svelte"],
+    "eslint.format.enable": true,
+    "editor.formatOnSaveMode": "file",
+    "svelte.plugin.svelte.compilerWarnings": {
+      "a11y-aria-attributes": "ignore",
+      "a11y-incorrect-aria-attribute-type": "ignore",
+      "a11y-unknown-aria-attribute": "ignore",
+      "a11y-hidden": "ignore",
+      "a11y-misplaced-role": "ignore",
+      "a11y-unknown-role": "ignore",
+      "a11y-no-abstract-role": "ignore",
+      "a11y-no-redundant-roles": "ignore",
+      "a11y-role-has-required-aria-props": "ignore",
+      "a11y-accesskey": "ignore",
+      "a11y-autofocus": "ignore",
+      "a11y-misplaced-scope": "ignore",
+      "a11y-positive-tabindex": "ignore",
+      "a11y-invalid-attribute": "ignore",
+      "a11y-missing-attribute": "ignore",
+      "a11y-img-redundant-alt": "ignore",
+      "a11y-label-has-associated-control": "ignore",
+      "a11y-media-has-caption": "ignore",
+      "a11y-distracting-elements": "ignore",
+      "a11y-structure": "ignore",
+      "a11y-mouse-events-have-key-events": "ignore",
+      "a11y-missing-content": "ignore",
+      "a11y-click-events-have-key-events": "ignore"
+    }
+  }
