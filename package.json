@@ -1,11 +1,14 @@
 {
   "name": "@fouita/form-editor",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "type": "module",
+  "private": false,
+  "module": "./src/main.js",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "start": "vite preview"
+    "start": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "description": "Svelte component to build forms using nocode editor. Built with svelte and tailwindcss.",
   "repository": {
@@ -27,6 +30,10 @@
     "url": "https://github.com/fouita/form-editor/issues"
   },
   "homepage": "https://github.com/fouita/form-editor#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "autoprefixer": "^10.4.7",

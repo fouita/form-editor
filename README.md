@@ -15,6 +15,15 @@ NoCode Customizable Form Editor
 ![Form builder Fouita](https://cdn.fouita.com/0x2713/media/imgs/form-builder-5-1672322203693.png)
 
 
+## Features
+
+- Customize text and inputs (WYSIWYG)
+- Multi Steps Forms
+- Customize colors 
+- RTL support
+- Add images and videos by inserting a link inside the text
+- Form Schema is exported so you can manipulate the data yourself
+- Form data is dispatched when user click on the Submit of the last step
 
 
 
@@ -34,24 +43,36 @@ Inside your svelte app
 
   // you can create a button to toggle the editable variable
   let editable = true
+
+  // initial form schema needed
   let form =  {
-      "name": "My Form",
-      "version": "18"
-    }
+    "name": "My Form",
+    "version": "1",
+    "steps": [{
+        "index": 0,
+        "props": {
+            "previousBtn": "Back",
+            "nextBtn": "Next"
+        },
+        "inputs": [
+            
+        ]
+    }]
+  }
 
   const settings = {
-	  textColor: "250 250 250";
-	  bgColor: "0 0 0";
-	  outlineColor: "165 180 252";
-	  buttonBgColor: "79 70 229";
-	  buttonTextColor: "255 255 255";
-	  borderColor: "200 200 200";
-	  form: formSimple;
-	  rounded: "rounded-none";
-	  size: "full";
-	  rtl: false;
-	  transparent: false;
-	  btnsPosition: "start"; // start, end, center
+	  textColor: "250 250 250",
+	  bgColor: "0 0 0",
+	  outlineColor: "165 180 252",
+	  buttonBgColor: "79 70 229",
+	  buttonTextColor: "255 255 255",
+	  borderColor: "200 200 200",
+	  form: form,
+	  rounded: "rounded-none",
+	  size: "full",
+	  rtl: false,
+	  transparent: false,
+	  btnsPosition: "start", // start, end, center
   }
 
   // get updated data
@@ -69,7 +90,7 @@ Inside your svelte app
 
 
 ### Generate CSS
-To be able to see CSS
+To be able to see the styled Editor, you can either use `form-editor.css` in your index.html or you can build the CSS using tailwind
 
 1. Copy the file `tailwind.config.js`
 2. Generate a seperate CSS for the Form Editor using the following command in your project 
@@ -92,6 +113,8 @@ Include the file in your HTML index file
 ```html
 <link rel="stylesheet" href="/form-editor.css" />
 ```
+
+
 
 ## Use it as widget
 

@@ -19,7 +19,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/main.js'),
       name: 'FormEditor',
-      fileName: (format) => `form-builder.${format}.js`
+      fileName: (format) => `form-editor.${format}.js`
     },
     rollupOptions: {
       output: {
