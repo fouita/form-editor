@@ -1,13 +1,32 @@
 {
   "name": "@fouita/form-editor",
   "version": "0.0.1",
-  "private": true,
   "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "start": "vite preview"
   },
+  "description": "Svelte component to build forms using nocode editor. Built with svelte and tailwindcss.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fouita/form-editor.git"
+  },
+  "author": "fouita",
+  "license": "MIT",
+  "keywords": [
+    "svelte",
+    "tailwind",
+    "wysiwyg",
+    "editor",
+    "form",
+    "builder",
+    "fouita"
+  ],
+  "bugs": {
+    "url": "https://github.com/fouita/form-editor/issues"
+  },
+  "homepage": "https://github.com/fouita/form-editor#readme",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "autoprefixer": "^10.4.7",
