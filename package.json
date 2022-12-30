@@ -1,6 +1,6 @@
 {
   "name": "@fouita/form-editor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "private": false,
   "module": "./src/main.js",
@@ -46,6 +46,6 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.3",
-    "tailwind-editor": "^0.2.0"
+    "tailwind-editor": "^0.2.1"
   }
 }
